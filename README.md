@@ -80,4 +80,4 @@ $$
 E(M|p,q,\gamma,mx,x) = p \cdot \left(1 - \frac{{1 + \gamma}}{{q + x + \gamma}}\right) + q \cdot \frac{{mx}}{{x + \gamma}}
 $$
 
-
+As the recency value increases, the customer's probability of purchasing increases, that is, the bgn db value increases. Because he bought a new product, there was a partial drop out.

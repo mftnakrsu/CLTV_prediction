@@ -52,3 +52,32 @@ This formula is used to predict a customer's future purchases and total value du
 - **h:** Another parameter of the beta distribution that represents fluctuations in customer dropout probabilities.
 
 This formula assists businesses in predicting their customers' future purchases and total values. Additionally, businesses can use the BG/NBD model to enhance customer loyalty strategies and optimize their marketing efforts.
+
+## Gamma Gamma Submodel and Its Use
+
+- **What is the Gamma Gamma Submodel?** The Gamma Gamma Submodel is a statistical model used for predicting Customer Lifetime Value (CLTV). It is used in conjunction with the BG/NBD model to enhance the precision of CLTV predictions. While the BG/NBD model analyzes customers' shopping behaviors, the Gamma Gamma Submodel assists in estimating the average profit per transaction for each customer.
+
+- **Calculating CLTV:** When calculating CLTV, the BG/NBD model predicts the number of future transactions for each customer, and the Gamma Gamma Submodel estimates the average profit per transaction. By combining these two predictions, the total future value of each customer is calculated. As a result, businesses obtain customer-specific CLTV predictions.
+
+## Gamma Gamma Expected Value Formula and Its Use
+
+- **Gamma Gamma Expected Value Formula:** The expected value formula for the Gamma Gamma Submodel is expressed as E(M|p,q,gamma,mx,x). This formula is used to estimate a customer's future average profit per transaction. Here are the components and explanations of the formula:
+
+  - **p:** The first parameter of the beta distribution representing the average profit per transaction for a customer.
+  - **q:** The second parameter of the beta distribution representing the average profit per transaction for a customer.
+  - **gamma:** The stability parameter, indicating fluctuations in transactions.
+  - **mx:** The total monetary value of a customer, which represents the total value of all transactions made by the customer.
+  - **x:** The lifetime of the customer.
+
+- **Its Use:** The Gamma Gamma Submodel helps businesses estimate the future average profit per transaction for each customer. These predictions are used in CLTV calculations to develop customer-specific marketing strategies and services. Additionally, these predictions are used in making strategic decisions such as customer segmentation and product pricing.
+
+In addition to your notes, the term "mx" represents the total monetary value of a customer, signifying the total value of all transactions they have made.
+### Gamma Gamma Expected Value Formula
+
+The expected value formula for the Gamma Gamma Submodel is:
+
+$$
+E(M|p,q,\gamma,mx,x) = p \cdot \left(1 - \frac{{1 + \gamma}}{{q + x + \gamma}}\right) + q \cdot \frac{{mx}}{{x + \gamma}}
+$$
+
+

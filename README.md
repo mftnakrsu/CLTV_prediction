@@ -2,6 +2,18 @@
 
 Project Title: CLTV Customer Lifetime Value Analysis
 
+- [CLTV Customer Life Time Value Prediction](#cltv-customer-life-time-value-prediction)
+  * [Introduction:](#introduction)
+  * [BG/NBD Model Expected Value Formula](#bg-nbd-model-expected-value-formula)
+  * [Gamma Gamma Submodel and Its Use](#gamma-gamma-submodel-and-its-use)
+  * [Gamma Gamma Expected Value Formula and Its Use](#gamma-gamma-expected-value-formula-and-its-use)
+    + [Gamma Gamma Expected Value Formula](#gamma-gamma-expected-value-formula)
+    + [Prerequisites](#prerequisites)
+    + [Installation](#installation)
+  * [Usage](#usage)
+
+
+
 ## Introduction:
 
 Customer loyalty and customer value are crucial factors for any business. These factors help businesses make strategic decisions by understanding their customers' future behaviors. Customer Lifetime Value (CLTV) is a vital metric that assists businesses in predicting the future value of their customers.
@@ -35,7 +47,7 @@ The BG/NBD (Beta Geometric/Negative Binomial Distribution) model is a statistica
 
 The BG/NBD model is crucial for businesses with customer bases, such as the retail and e-commerce sectors. This model helps businesses predict their customers' future behaviors and optimize their marketing strategies. Additionally, it aids in developing strategies for customer loyalty and acquisition. The expected value formula enables businesses to predict their customers' future purchases and total values, allowing for the optimization of marketing efforts.
 
-## BG/NBD Model Expected Value Formula
+## BG NBD Model Expected Value Formula
 
 The expected value formula of the BG/NBD model is as follows:
 
@@ -81,3 +93,45 @@ E(M|p,q,\gamma,mx,x) = p \cdot \left(1 - \frac{{1 + \gamma}}{{q + x + \gamma}}\r
 $$
 
 As the recency value increases, the customer's probability of purchasing increases, that is, the bgn db value increases. Because he bought a new product, there was a partial drop out.
+
+Tabii ki, daha sistematik bir GitHub README oluşturabilirim:
+
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Python 3.x
+- Install the required libraries using pip:
+
+```bash
+pip install pandas lifetimes
+```
+
+### Installation
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/your-username/cltv-prediction.git
+cd cltv-prediction
+```
+
+## Usage
+
+1. Prepare your transaction data in a CSV file (e.g., `data.csv`).
+
+2. Update the `'data.csv'` file path in the script if necessary.
+
+3. Run the script to calculate Customer Lifetime Value (CLTV) predictions:
+
+```bash
+python cltv_main.py
+```
+
+4. The script will preprocess the data, fit the BG/NBD and Gamma-Gamma models, and calculate CLTV for each customer.
+
+5. The results will be saved in a CSV file named `'cltv_prediction.csv'`.
+
+Feel free to add more sections or customize this README to suit your project's specific needs.
+

@@ -131,5 +131,4 @@ python cltv_main.py
 
 5. The results will be saved in a CSV file named `'cltv_prediction.csv'`.
 
-Feel free to add more sections or customize this README to suit your project's specific needs.
 
